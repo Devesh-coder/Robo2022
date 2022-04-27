@@ -25,11 +25,9 @@ int throwingMotorAnalog[2] = {5,7};
 int reMotorDigital[2][2];
 int reMotorAnalog[2][2];
 bool dirArray[2][2] = {{0,1},{0,1}}; // 0,1,0,1
-//bool reDir[2][2];
 
 int motorDigital[2][2] = {{15,3},{17,26}};  // south, north, west, east
 int motorAnalog[2][2] = {{12,4},{13,2}};   // south, north, west, east
-//bool axis, sign;
 
 void setup() {
   Serial.begin(9600);
@@ -204,13 +202,3 @@ void motorStop(){
   }
   motorSpeed = 0;
 }
-
-//void initialize(){
-//  for(int i=0; i<2; i++){
-//    for(int j=0; j<2; j++){
-//      motorDigital[i][j] = reMotorDigital[i][j];
-//      motorAnalog[i][j] = reMotorAnalog[i][j];
-//      dirArray[i][j] = reDir[i][j];
-//    }
-//  }
-//}
